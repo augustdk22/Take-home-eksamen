@@ -1,0 +1,56 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1.4ex}
+\usepackage[danish]{babel}
+\usepackage{subfiles}
+\usepackage{listings}
+
+\title{Take home eksamen DM500}
+\author{August Christian Borreby, Hold 9, studie gruppe 10\\ SDU-brugernavn: aubor22}
+\date{20 November 2022}
+
+
+\begin{document}
+\maketitle
+\section{Re-eksamen februar 2015}
+\subsection{Opgave 2}
+a) Hvilke af disse udsagn er sande \\ \\
+    $1. \forall x \in N: \exists y \in N: x < y $\\ \\
+    Dette udsagn er sandt da der altid vil eksitere et y som er større end det valgte x. Hvis x er 2 kan y være 3 hvis x er 3 kan y være 4. \\ \\
+    $2. \forall x \in N: \exists! y \in N: x < y$\\ \\
+    Dette udsagn er ikke rigtigt da den siger at der kun eksitere et y som er større end x. Da dette ikke er tilfældet vil eksempelvis x = 4 eller x = 5 osv er udsagnet ikke rigtigt.\\ \\
+    $3. \exists y \in N: \forall x \in N: x < y$\\ \\
+    Dette udsagn er ikke sandt da vi siger existere y først og derefter for alle x. Denne opgave er det modsatte af opgave a. Et eksempel ville være at sige vi vælger y = 3 så tæller dette ikke for alle x´er da 4,5,6 osv er større. 
+\\ \\
+b) Angiv negeringen af udsagn 1. fra spørgsmål a. Negerings-operatoren $(\neg)$ må ikke indgå i dit udsagn. \\
+\\
+At bruge negation vil sige at gøre det modsatte. så hvis jeg negere udtryk 1 fra opagave a får jeg \\
+\\
+$\exists x \in N: \forall y \in N: x > y$ \\
+\\
+Det vil sige at nu eksitere der et x for alle y'er hvor x er større end y
+\subsection{Opgave 3}
+Lad R S og T være binære relationer på mængden ${1,2,3,4}$\\\\
+a) Lad R = ${(1,1),(2,1),(2,2),(2,4),(3,1),(3,3),(3,4),(4,1),(4,4)}$\\
+er R en partiel ordning?\\\\
+at noget er en partiel ordning vil sige at den er delvist ordnet. derfor er R en partiel ordning da den ikke er en total ordning. hvis det var en total ordning manglegde der ${(1,2),(4,2),(1,3),(4,3),(1,4)}$. Derfor er svaret at det er en partial ordning, \\\\
+b) Lad S = ${(1,2),(2,3),(2,4),(4,2)}$ \\
+Angiv den transitive lukning af S. \\\\
+Den transitive lukning er ${(1,3),(1,4),(2,2),(4,3),(4,4)}$ \\\\
+c) Lad T = ${(1,1),(1,3),(2,2),(2,4),(3,1),(3,3),(4,2),(4,4)}$\\
+Bemærk at T er en ækvivalens-relation. \\\\
+Angiv T's ækvivalens-klasser.\\\\
+For at finde ud af hvad T's ækvavilens-klasser er skal jeg fnde ud af om relationen er refleksiv transitiv og eller symmetrisk.\\
+T er symmetrisk da (1,3) findes og (3,1) og (4,2) og (2,4). T er også refleksiv da (1,1),(2,2) (3,3) og (4,4) indgår. T er ikke transitiv da eksempelvis (1,2) (1,3) (1,4) ikke ingår. \\\\
+\section{Aflevering}
+Grunden til at jeg laver denne aflevering alene, er at begge mine studiegruppe medlemmer Jan Lucca Thümmel og Gustav Bech Christensen har merit fra DM 500.
+
+
+
+
+    
+\end{document}
